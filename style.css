@@ -1,0 +1,90 @@
+body {
+  background: #ffcbcb;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+header {
+  text-align: center;
+  font-size: 35px;
+  padding: 40px 20px;
+
+  font-weight: 900px;
+}
+section {
+  display: block;
+  margin: 0 auto;
+  width: 900px;
+  height: 400px;
+  box-shadow: 0px 20px 20px 20px rgb(198, 178, 189);
+  border-radius: 5px;
+  background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+}
+form {
+  display: block;
+  margin-left: 0 auto;
+  width: 400px;
+  height: 100px;
+
+  text-align: center;
+}
+ul {
+  display: block;
+  margin-right: 0 auto;
+  width: 460px;
+  height: 400px;
+
+  text-align: center;
+  position: relative;
+  top: -278px;
+  left: 400px;
+}
+li {
+  list-style: none;
+  padding: 15px 15px;
+  margin: 0 auto;
+  position: relative;
+  top: -40px;
+  right: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 80px;
+}
+.input-city {
+  position: relative;
+  top: 35px;
+  width: 300px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.submit {
+  position: relative;
+  top: 35px;
+  font-size: 18px;
+  border-radius: 10px;
+  background: #ffcbcb;
+}
+.city {
+  font-size: 35px;
+  position: relative;
+  left: 40px;
+}
+.temp {
+  font-size: 35px;
+  position: relative;
+  left: 65px;
+}
+.time-date {
+  display: block;
+  margin: 0 auto;
+  padding: 20px 20px;
+  position: relative;
+  left: 67px;
+}
+.condition {
+  font-size: large;
+
+  position: relative;
+  left: 50px;
+}
