@@ -4,23 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather Application</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header><strong>Sarah Weather Application</strong></header>
     <section>
-      <form>
+      <form id="city-search">
         <input
           class="input-city"
           type="search"
           placeholder="search for a city...."
           required
+          id="city-input"
         />
-        <input class="submit" type="submit" value="search" />
+        <input class="submit" type="submit" value="search" id="city-submit" />
       </form>
 
       <h1>
-        <span class="city">London </span><span class="temp">🌞22°C </span>
+        <span class="city" id="city-change">London </span
+        ><span class="temp">🌞22°C </span>
         <div class="time-date">Time and date</div>
       </h1>
       <span class="condition"
