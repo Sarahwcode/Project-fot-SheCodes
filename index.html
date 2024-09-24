@@ -11,24 +11,25 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <header><strong>Sarah Weather Application</strong></header>
     <section>
       <form id="city-search">
         <input
+          id="city-input"
           class="input-city"
           type="search"
           placeholder="search for a city...."
           required
-          id="city-input"
         />
         <input class="submit" type="submit" value="search" id="city-submit" />
       </form>
 
       <h1>
         <span class="city" id="city-change">London </span
-        ><span class="temp">🌞22°C </span>
+        ><span class="temp" id="temp-change">🌞22°C </span>
         <div class="time-date">Time and date</div>
       </h1>
       <span class="condition"
@@ -63,5 +64,6 @@
       and hosted by
       <a href="" target="_blank">Netlify</a>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
