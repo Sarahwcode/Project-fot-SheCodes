@@ -6,6 +6,10 @@ function cityChanges(response) {
   let temperature = Math.round(weather.temperature.current);
   let tempChange = document.querySelector("#temp-change");
   tempChange.innerHTML = `${temperature}°C`;
+  let displayCondition = document.querySelector("#condition");
+  displayCondition.innerHTML = `Condition: ${response.data.condition.description}`;
+  let displayHumidity = document.querySelector("#humidity");
+  displayHumidity.innerHTML = `Humidity: ${response.data.temperature.humidity}%`;
 }
 function getCity(event) {
   event.preventDefault();
