@@ -10,7 +10,33 @@ function cityChanges(response) {
   displayCondition.innerHTML = `Condition: ${response.data.condition.description}`;
   let displayHumidity = document.querySelector("#humidity");
   displayHumidity.innerHTML = `Humidity: ${response.data.temperature.humidity}%`;
+  let displayWind = document.querySelector("#wind");
+  displayWind.innerHTML = `Wind Speed: ${response.data.wind.speed}km/h`;
+  let timeChange = document.querySelector("#time-date");
+  let date = new Date(response.data.time * 1000);
+  timeChange.innerHTML = timeDate(date);
+  let iconElement = document.querySelector("#icon");
+  iconElement.innerHTML = `<img
+
+            src="${response.data.condition.icon_url}" class="icon-temp"/>`;
 }
+function timeDate(date) {
+  let hour = date.getHours();
+  let minute = date.getMinutes();
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = days[date.getDay()];
+  if (minute < 10) minute = `0${minute}`;
+  return `${day} ${hour}:${minute}`;
+}
+
 function getCity(event) {
   event.preventDefault();
   let inputCity = document.querySelector("#city-input").value;
