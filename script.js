@@ -7,11 +7,11 @@ function cityChanges(response) {
   let tempChange = document.querySelector("#temp-change");
   tempChange.innerHTML = `${temperature}°C`;
   let displayCondition = document.querySelector("#condition");
-  displayCondition.innerHTML = `Condition: ${response.data.condition.description}`;
+  displayCondition.innerHTML = `Condition: <span style="color: #f76b8a;"> ${response.data.condition.description}</span>`;
   let displayHumidity = document.querySelector("#humidity");
-  displayHumidity.innerHTML = `Humidity: ${response.data.temperature.humidity}%`;
+  displayHumidity.innerHTML = `Humidity: <span style="color: #f76b8a;"> ${response.data.temperature.humidity}%</span>`;
   let displayWind = document.querySelector("#wind");
-  displayWind.innerHTML = `Wind Speed: ${response.data.wind.speed}km/h`;
+  displayWind.innerHTML = `Wind Speed: <span style="color: #f76b8a;">${response.data.wind.speed}km/h</span>`;
   let timeChange = document.querySelector("#time-date");
   let date = new Date(response.data.time * 1000);
   timeChange.innerHTML = timeDate(date);
