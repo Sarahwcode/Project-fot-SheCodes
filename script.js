@@ -47,3 +47,29 @@ function getCity(event) {
 
 let citySearch = document.querySelector("#city-search");
 citySearch.addEventListener("submit", getCity);
+
+function weatherForcast() {
+  let forcast = document.querySelector("#weather-forcast");
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let forcastHTML = "";
+  days.forEach(function (day) {
+    forcastHTML =
+      forcastHTML +
+      ` <li>
+          <span class="day-two">${day}</span>
+          <div class="day-two-icon"></div>
+          <div class="day-two-temp"></div>
+        </li>
+       `;
+  });
+  forcast.innerHTML = forcastHTML;
+}
+weatherForcast();
