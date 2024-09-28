@@ -31,9 +31,9 @@ ul {
   width: 460px;
   height: 400px;
   text-align: center;
-  position: fixed;
-  left: 900px;
-  top: 150px;
+  position: relative;
+  left: 420px;
+  top: -150px;
 }
 li {
   list-style: none;
