@@ -1,5 +1,5 @@
 body {
-  background: #ffcbcb;
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/145/561/original/weather.jpg?1727553488");
   font-family: Roboto Condensed, sans-serif;
 }
 header {
@@ -45,6 +45,7 @@ footer {
   text-align: center;
   padding: 80px;
 }
+
 .input-city {
   position: relative;
   top: 35px;
