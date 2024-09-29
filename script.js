@@ -82,10 +82,10 @@ function weatherForecast(response) {
             src="${day.condition.icon_url}"  class="day-two-icon" /> </div>
           <div class="day-two-temp"> <strong>${Math.round(
             day.temperature.maximum
-          )}</strong></div>
+          )}°C</strong></div>
           <span class="day-two-temp"> ${Math.round(
             day.temperature.minimum
-          )}</span>
+          )}°C</span>
         </li>
        `;
     }
