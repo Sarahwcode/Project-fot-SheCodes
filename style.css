@@ -17,6 +17,7 @@ section {
   box-shadow: 0px 20px 20px 20px rgb(198, 178, 189);
   border-radius: 5px;
   background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+  max-width: 100%;
 }
 form {
   display: block;
@@ -52,6 +53,7 @@ footer {
   width: 300px;
   height: 30px;
   border-radius: 10px;
+  max-width: 100%;
 }
 
 .submit {
@@ -60,6 +62,7 @@ footer {
   font-size: 18px;
   border-radius: 10px;
   background: #ffcbcb;
+  max-width: 100%;
 }
 .city {
   font-size: 35px;
@@ -99,4 +102,11 @@ footer {
 }
 .day-two-icon {
   width: 50px;
+}
+@media (max-width: 900px) {
+  ul {
+    position: relative;
+    left: 150px;
+    top: -380px;
+  }
 }
